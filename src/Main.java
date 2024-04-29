@@ -1,44 +1,31 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Student student1 = new Student();
-        student1.name = "Przemek";
-        student1.surname = "Botwina";
-        student1.email = "qwe@w.pl";
-        student1.nick = "WersV";
-        student1.indexId = 990;
 
+        Calc calculator = new Calc("User1", "user1@test.pl");
+        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Podaj liczbę a: ");
+//        int aNum = scanner.nextInt();
+//
+//        System.out.println("Podaj liczbę b: ");
+//        int bNum = scanner.nextInt();
+//
+//        int additionResult = calculator.addition(aNum, bNum);
+//        int subtractionResult = calculator.subtraction(aNum, bNum);
+//        int multiplicationResult = calculator.multiplication(aNum, bNum);
+//        int divisionResult = calculator.division(aNum, bNum);
+//        int moduloResult = calculator.modulo(aNum, bNum);
+//
+//
+//        System.out.println("Addition: " + additionResult);
+//        System.out.println("Subtraction: " + subtractionResult);
+//        System.out.println("Multiplication: " + multiplicationResult);
+//        System.out.println("Division: " + divisionResult);
+//        System.out.println("Modulo: " + moduloResult);
 
-        Student student2 = new Student();
-        student2.name = "Jan";
-        student2.surname = "Kowalski";
-        student2.email = "adsasd@sad.pl";
-        student2.nick = "JANEK";
-        student2.indexId = 119;
+        System.out.println(calculator.name + " " + calculator.email);
 
-
-        Student student3 = new Student();
-        student3.name = "Zdzisław";
-        student3.surname = "Nowak";
-        student3.email = "bnbnb@vvc.pl";
-        student3.nick = "Zdziśek";
-        student3.indexId = 201;
-
-        Student[] studentsArr = new Student[3];
-
-        studentsArr[0] = student1;
-        studentsArr[1] = student2;
-        studentsArr[2] = student3;
-
-
-
-//        for (Student student : studentsArr) {
-//            student.sayHello();
-//            student.login();
-//            student.provideIndexId();
-//            student.provideEmail();
-//            System.out.println("=============");
-//        }
-        int returnedValue = student3.add(3,5);
-        System.out.println("Suma to: " + returnedValue);
     }
 }
