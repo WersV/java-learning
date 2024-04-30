@@ -3,6 +3,10 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .idea
+<<<<<<< HEAD
+=======
+
+>>>>>>> inheritance
 ### Eclipse ###
 .apt_generated
 .classpath
