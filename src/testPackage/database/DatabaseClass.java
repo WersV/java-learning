@@ -5,5 +5,6 @@ public class DatabaseClass {
 
     public void hello() {
         System.out.println("DatabaseClass says hello!");
+
     }
 }
