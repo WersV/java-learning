@@ -1,11 +1,15 @@
+import secondPackage.SecondPackageClass;
+import testPackage.database.DatabaseClass;
+import testPackage.view.ViewClass;
+
 public class App {
-    public String name;
-
-    public App(String name) {
-        this.name = name;
-    }
-
-    public void appInfo() {
-        System.out.println(this.name + " says hello!");
+    public static void main(String[] args) {
+        DatabaseClass databaseClass = new DatabaseClass();
+        databaseClass.hello();
+        System.out.println(databaseClass.defaultValue);
+        ViewClass viewClass = new ViewClass();
+        viewClass.hello();
+        SecondPackageClass secondPackageClass = new SecondPackageClass();
+        secondPackageClass.hello();
     }
 }
