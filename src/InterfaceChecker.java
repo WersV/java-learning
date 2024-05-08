@@ -1,14 +1,22 @@
 import drivers.ChromeDriver;
 import drivers.FirefoxDriver;
+import packages.WebDriver;
 
 public class InterfaceChecker {
     public static void main(String[] args) {
-        ChromeDriver chromeDriver = new ChromeDriver();
-        chromeDriver.get();
-        chromeDriver.findElementBy();
+        WebDriver driver = getDriver("chrome");
 
-        FirefoxDriver firefoxDriver = new FirefoxDriver();
-        firefoxDriver.get();
-        firefoxDriver.findElementBy();
+        driver.get();
+        driver.findElementBy();
+
+    }
+
+    public static WebDriver getDriver(String driverName) {
+        if(driverName.equals("chrome")) {
+            return new ChromeDriver();
+        } else if(driverName.equals("firefox")) {
+            return new FirefoxDriver();
+        }
+        return new ChromeDriver();
     }
 }
