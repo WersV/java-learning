@@ -2,14 +2,14 @@ import enums.DriverType;
 
 public class App {
     public static void main(String[] args) {
-        getDriver(DriverType.FIREFOX);
+        getDriver(DriverType.CHROME);
     }
 
     public static void getDriver(DriverType type) {
-        if(type == DriverType.CHROME) {
+        if(type.name.equals("chrome")) {
             System.out.println("Korzystasz z chrome");
         }
-        if(type == DriverType.FIREFOX) {
+        if(type.name.equals("firefox")) {
             System.out.println("Korzystasz z firefoxa");
         }
     }
